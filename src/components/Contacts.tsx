@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
             <p className="text-lg text-gray-700 mb-2">
-              <strong>Address:</strong> St. Anselm’s Senior Secondary School, Abu Road
+              <strong>Address:</strong> St. Anselm&rsquo;s Senior Secondary School, Abu Road
             </p>
             <p className="text-lg text-gray-700 mb-2">
               <strong>Email:</strong> info@abuanselm.com

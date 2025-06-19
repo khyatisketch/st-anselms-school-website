@@ -30,10 +30,10 @@ const About = () => {
               <div className="mt-1 w-20 border-b-4 border-yellow-400"></div>
             </h2>
             <p className="text-gray-700 leading-relaxed mb-2">
-            St. Anselm's is a small school with a big voice in Education, One that is heard and respected far and wide. It was founded by visionaries in 1962. St. Anselm's is unique as it was established by a group of parents known as our Founder members who were dissatisfied with the prevalent system of education then.
+            St. Anselm&rsquo;s is a small school with a big voice in Education, One that is heard and respected far and wide. It was founded by visionaries in 1962. St. Anselm&rsquo;s is unique as it was established by a group of parents known as our Founder members who were dissatisfied with the prevalent system of education then.
              </p>
             <p className="text-gray-700 leading-relaxed">
-            The St. Anselm's Association is a parent co-operative. The Governing Body consists of the Trustees, Founder Members, elected Parent Members and Principal. The Founder Members drafted a written constitution which gives the guidelines and framework to the school.
+            The St. Anselm&rsquo;s Association is a parent co-operative. The Governing Body consists of the Trustees, Founder Members, elected Parent Members and Principal. The Founder Members drafted a written constitution which gives the guidelines and framework to the school.
              </p>
           </div>
         </div>

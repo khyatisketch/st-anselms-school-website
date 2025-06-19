@@ -7,7 +7,7 @@ const Hero = () => {
         
         <div className="md:w-1/2 p-4 text-center md:text-left">
           <h1 className="text-4xl font-bold text-blue-900 mb-4">
-            Welcome to St. Anselm’s
+            Welcome to St. Anselm&rsquo;s
           </h1>
           <p className="text-gray-700 mb-6">
             A legacy of excellence in education, character building, and holistic development.

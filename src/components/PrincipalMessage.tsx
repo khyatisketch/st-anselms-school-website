@@ -36,11 +36,11 @@ const PrincipalMessage = () => {
             Message from the Principal
           </h2>
           <p className="text-gray-700 text-lg mb-4 leading-relaxed">
-            At <span className="font-semibold text-blue-800">St. Anselm’s Senior Secondary School</span>, we believe in nurturing not only the intellect but also the character of every child. 
+            At <span className="font-semibold text-blue-800">St. Anselm&rsquo;s Senior Secondary School</span>, we believe in nurturing not only the intellect but also the character of every child. 
             Our legacy of academic excellence, moral integrity, and holistic development has been our guiding light for decades.
           </p>
           <p className="text-gray-700 text-lg leading-relaxed">
-            I warmly welcome you to explore our vibrant community. Together, let’s inspire young minds to achieve their fullest potential — in the classroom, on the field, and beyond.
+            I warmly welcome you to explore our vibrant community. Together, let&rsquo;s inspire young minds to achieve their fullest potential — in the classroom, on the field, and beyond.
           </p>
           <p className="mt-6 text-gray-600 italic text-xl">— Father Dominic, Principal</p>
         </motion.div>

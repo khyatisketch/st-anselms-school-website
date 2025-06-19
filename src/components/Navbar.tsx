@@ -13,7 +13,7 @@ const Navbar = () => {
             className="w-8 h-8 object-contain"
           />
           <span className="text-xl font-bold text-blue-900">
-            St. Anselm’s
+            St. Anselm&rsquo;s
           </span>
         </div>
         
