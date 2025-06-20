@@ -56,7 +56,10 @@ const Gallery = () => {
             <div
               key={index}
               data-index={index}
-              ref={(el) => (imageRefs.current[index] = el)}
+              ref={(el) => {
+                imageRefs.current[index] = el;
+              }}
+              
               className={`relative overflow-hidden rounded-xl shadow-lg bg-white border border-gray-200
                 transition-all duration-700 ease-out
                 ${
