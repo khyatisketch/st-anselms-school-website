@@ -3,7 +3,22 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-const academics = [
+// ✅ Define types for better type safety
+type AcademicText = {
+  type: 'text';
+  title: string;
+  description: string;
+};
+
+type AcademicImage = {
+  type: 'image';
+  src: string;
+  alt: string;
+};
+
+type AcademicItem = AcademicText | AcademicImage;
+
+const academics: AcademicItem[] = [
   { type: 'text', title: 'Athletic Excellence', description: 'Fostering physical fitness, teamwork, and sportsmanship through a robust sports program.' },
   { type: 'image', src: '/images/sports.avif', alt: 'Student playing football on the field' },
   { type: 'text', title: 'Tech-Enhanced Learning', description: 'Empowering students with cutting-edge technology and digital tools.' },
@@ -31,7 +46,8 @@ const AcademicsNoticesDownloads = () => {
   return (
     <section id="academics" className="py-16 bg-white">
       <div className="container mx-auto px-4 flex flex-col md:flex-row gap-8">
-        {/* Academics */}
+        
+        {/* Academics Section */}
         <div className="md:w-4/5">
           <motion.h2 
             initial={{ opacity: 0, y: 30 }}
@@ -42,6 +58,7 @@ const AcademicsNoticesDownloads = () => {
           >
             Academics
           </motion.h2>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {academics.map((item, index) => (
               item.type === 'text' ? (
@@ -75,7 +92,8 @@ const AcademicsNoticesDownloads = () => {
                     src={item.src}
                     alt={item.alt}
                     className="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300"
-                    width={400} height={300}
+                    width={400}
+                    height={300}
                   />
                 </motion.div>
               )
@@ -83,8 +101,9 @@ const AcademicsNoticesDownloads = () => {
           </div>
         </div>
 
-        {/* Notices + Downloads combined column */}
-        <div id="notices" className="md:w-1/5 flex flex-col gap-12">
+        {/* Notices + Downloads */}
+        <div className="md:w-1/5 flex flex-col gap-12">
+          
           {/* Notices */}
           <div>
             <motion.h2 
@@ -98,7 +117,7 @@ const AcademicsNoticesDownloads = () => {
             </motion.h2>
             <div className="grid gap-4">
               {notices.map((notice, index) => (
-                <motion.a
+                <motion.a 
                   key={index}
                   href={notice.link}
                   target="_blank"
@@ -117,7 +136,7 @@ const AcademicsNoticesDownloads = () => {
           </div>
 
           {/* Downloads */}
-          <div id='downloads'>
+          <div>
             <motion.h2 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -130,9 +149,9 @@ const AcademicsNoticesDownloads = () => {
             <div className="grid gap-4">
               {downloads.map((file, index) => (
                 <motion.a 
-                  key={index} 
-                  href={file.link} 
-                  target="_blank" 
+                  key={index}
+                  href={file.link}
+                  target="_blank"
                   rel="noopener noreferrer"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -146,6 +165,7 @@ const AcademicsNoticesDownloads = () => {
               ))}
             </div>
           </div>
+
         </div>
       </div>
     </section>
