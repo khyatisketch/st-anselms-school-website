@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -16,10 +17,11 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-0 items-center">
           {/* Left image */}
           <div className="relative">
-            <img
+            <Image
               src="/images/contact.jpg"
               alt="Campus"
               className="w-full h-auto object-cover rounded-lg shadow-lg"
+              width={400} height={300}
             />
           </div>
 

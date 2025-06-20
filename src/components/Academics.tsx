@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const academics = [
   { type: 'text', title: 'Athletic Excellence', description: 'Fostering physical fitness, teamwork, and sportsmanship through a robust sports program.' },
@@ -70,10 +71,11 @@ const AcademicsNoticesDownloads = () => {
                   transition={{ duration: 0.5, delay: index * 0.05 }}
                   className="overflow-hidden rounded-lg shadow-lg"
                 >
-                  <img 
+                  <Image
                     src={item.src}
                     alt={item.alt}
                     className="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-300"
+                    width={400} height={300}
                   />
                 </motion.div>
               )

@@ -1,5 +1,6 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 
 const galleryImages = [
   { src: '/images/Gallery1.jpg', title: 'Academics' },
@@ -64,10 +65,11 @@ const Gallery = () => {
                     : 'opacity-0 translate-y-8'
                 }`}
             >
-              <img
+              <Image
                 src={item.src}
                 alt={item.title}
                 className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+                width={400} height={300}
               />
 
               <div className="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-40">

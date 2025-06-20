@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
@@ -7,10 +8,11 @@ const Navbar = () => {
         
         {/* Logo + School Name */}
         <div className="flex items-center gap-2">
-          <img 
+          <Image
             src="/images/anselm-crest.jpeg" 
             alt="St. Anselm’s Crest" 
             className="w-8 h-8 object-contain"
+            width={400} height={300}
           />
           <span className="text-xl font-bold text-blue-900">
             St. Anselm&rsquo;s

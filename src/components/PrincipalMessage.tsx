@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const PrincipalMessage = () => {
   return (
@@ -16,10 +17,11 @@ const PrincipalMessage = () => {
           className="flex justify-center"
         >
           <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-blue-900 shadow-lg">
-            <img 
+            <Image
               src="/images/principal.jpg" 
               alt="Principal of St. Anselm’s"
               className="w-full h-full object-cover"
+              width={400} height={300}
             />
           </div>
         </motion.div>
