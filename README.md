@@ -1,39 +1,79 @@
-# st-anselms-school-website
-A modern, responsive demo website for St. Anselm’s School — built using Next.js, Tailwind CSS, and React. Includes features like admission enquiry drawer, responsive layout, and smooth UI transitions.
+# 🏫 St. Anselm’s School Website — Demo
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+A responsive, modern school website built with Next.js 14, React, and Tailwind CSS.
+Created to demonstrate scalable frontend architecture, component reusability, and smooth UI transitions using modern React patterns.
 
-## Getting Started
+# 🔍 Overview
 
-First, run the development server:
+This project serves as a frontend demo for a potential real-world client (St. Anselm’s School).
+Focus areas:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Clean, maintainable folder structure
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Modular components with clear separation of concerns
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Fluid animations and transitions
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Accessible, responsive layout optimized for performance
 
-## Learn More
+# ⚙️ Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+Framework: Next.js 14 (App Router)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Language: TypeScript
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Styling: Tailwind CSS, Lucide Icons
 
-## Deploy on Vercel
+Animation: Framer Motion
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deployment: Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# 🚀 Key Features
+
+Fully responsive layout (mobile → desktop)
+
+Admission enquiry drawer with form validation
+
+Page-level metadata and SEO configuration
+
+Modular UI components for easy extension
+
+Optimized asset loading and lazy rendering
+
+# 🧩 Project Structure
+app/
+ 
+ ├── components/        # Reusable UI components
+
+ ├── layout.tsx         # Root layout and global styles
+ 
+ ├── page.tsx           # Landing page
+ 
+ ├── about/             # About page
+ 
+ ├── gallery/           # Gallery with motion effects
+ 
+ ├── contact/           # Contact + enquiry drawer
+
+# 🖥️ Demo & Setup
+
+Live Demo: https://st-anselms-demo.vercel.app
+
+Clone & Run:
+
+`git clone https://github.com/yourusername/st-anselms-school-website.git`
+`cd st-anselms-school-website`
+`npm install`
+`npm run dev`
+
+
+Visit `http://localhost:3000`
+.
+
+# 📈 Future Improvements
+
+Integrate a headless CMS for dynamic content
+
+Add admin dashboard for admissions & gallery management
+
+Implement form submission backend (Flask / Next.js API Routes)
